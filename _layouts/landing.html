@@ -39,9 +39,8 @@ layout: default
 
       <ul class="landing__stats">
         <li><strong>{{ site.data.countries | size }}</strong><span>Countries</span></li>
-        <li><strong>{{ site.portfolio | size }}</strong><span>Projects</span></li>
-        <li><strong>{{ site.wp | size }}</strong><span>Working papers</span></li>
-        <li><strong>3</strong><span>Degrees</span></li>
+        <li><strong>{{ site.data.selected_research | size }}</strong><span>Projects</span></li>
+        <li><strong> 4 </strong><span>Working papers</span></li>
       </ul>
     </div>
   </header>
@@ -64,6 +63,11 @@ layout: default
       <div class="cards">
         {% for item in site.data.selected_research %}
           <article class="card">
+            {% if item.image %}
+              <span class="card__media">
+                <img src="{{ item.image | prepend: base_path }}" alt="{{ item.title }}" loading="lazy">
+              </span>
+            {% endif %}
             <span class="card__body">
               <span class="card__tag">{{ item.tag }}</span>
               <span class="card__title">{{ item.title }}</span>

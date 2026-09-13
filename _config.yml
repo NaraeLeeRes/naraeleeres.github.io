@@ -12,7 +12,7 @@ title                    : "Narae Lee"
 title_separator          : "-"
 name                     : &name "Narae Lee"
 description              : &description "Narae Lee's Academic Website"
-or_image                 : "profile.png"
+og_image                 : "profile.png"
 
 url                     : "https://naraeleeres.github.io"
 repository               : "naraeleeres/naraeleeres.github.io"
@@ -22,10 +22,10 @@ repository               : "naraeleeres/naraeleeres.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-#  avatar           : "profile.png"
-#  name             : "Narae Lee"
+  avatar           : "profile.png"
+  name             : "Narae Lee"
   pronouns         : # example: "she/her"  
-#  bio              : "An economist specializing in policy analysis.<br> Infrastructure, Labor Economics, Development, Health"
+  bio              : "An economist specializing in policy analysis.<br> Infrastructure, Labor Economics, Development, Health"
   location         : "Washington, D.C."
   employer         : "DECDI, World Bank"
   uri              : "naraeleeres.github.io"

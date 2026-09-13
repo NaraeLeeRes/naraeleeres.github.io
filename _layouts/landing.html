@@ -59,10 +59,10 @@ layout: default
   <!-- ─────────────────────────  02 SELECTED WORK  ───────────────────────── -->
   <section class="landing__section landing__section--alt" id="work">
     <div class="landing__wrap">
-      <h2 class="landing__title">Selected work</h2>
+      <h2 class="landing__title">Selected Research</h2>
 
       <div class="cards">
-        {% for item in site.data.selected_work %}
+        {% for item in site.data.selected_research %}
           <a class="card" href="{{ item.url | uri_escape | prepend: base_path }}">
             <span class="card__media">
               <img src="{{ item.image | uri_escape | prepend: base_path }}" alt="" loading="lazy">

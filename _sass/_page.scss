@@ -16,6 +16,12 @@
   }
 }
 
+.landing__name,
+.landing__meta,
+.landing__lede {
+  text-align: center;
+}
+
 .page {
   @include breakpoint($large) {
     @include span(10 of 12 last);

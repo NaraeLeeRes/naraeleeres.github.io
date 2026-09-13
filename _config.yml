@@ -22,10 +22,10 @@ repository               : "naraeleeres/naraeleeres.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
-  name             : "Narae Lee"
+#  avatar           : "profile.png"
+#  name             : "Narae Lee"
   pronouns         : # example: "she/her"  
-  bio              : "An economist specializing in policy analysis.<br> Infrastructure, Labor Economics, Development, Health"
+#  bio              : "An economist specializing in policy analysis.<br> Infrastructure, Labor Economics, Development, Health"
   location         : "Washington, D.C."
   employer         : "DECDI, World Bank"
   uri              : "naraeleeres.github.io"

@@ -282,6 +282,42 @@
   border-radius: 10px;
 }
 
+.portfolio-list h2 {
+  margin-top: 2em;
+  margin-bottom: .8em;
+}
+
+.portfolio-item {
+  padding: .2em 0 1em;
+  border-bottom: 1px solid var(--lp-border);
+}
+
+.portfolio-item p {
+  margin: 0;
+}
+
+.portfolio-item a,
+.portfolio-presentations a {
+  color: var(--lp-accent);
+}
+
+.portfolio-presentations {
+  display: grid;
+  grid-template-columns: 4em 1fr;
+  gap: .8em 1.2em;
+  margin: 0;
+}
+
+.portfolio-presentations dt {
+  font-weight: 700;
+  color: var(--lp-text);
+}
+
+.portfolio-presentations dd {
+  margin: 0;
+  color: var(--lp-muted);
+}
+
 .flags,
 .landing__links {
   display: flex;

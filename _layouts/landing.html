@@ -30,10 +30,10 @@ layout: default
           <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Download CV
         </a>
         <a class="landing__btn" href="https://www.worldbank.org/en/about/unit/unit-dec/impactevaluation">
-          <i class="fa-solid fa-envelope" aria-hidden="true"></i> World Bank DECDI
+          <i class= aria-hidden="true"></i> World Bank DECDI →
         </a>
         <a class="landing__btn landing__btn--primary" href="https://www.worldbank.org/en/about/people/n/narae-lee">
-          <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Company Bio
+          <i class= aria-hidden="true"></i> Company Bio →
         </a>
       </p>
 
@@ -59,20 +59,17 @@ layout: default
   <!-- ─────────────────────────  02 SELECTED WORK  ───────────────────────── -->
   <section class="landing__section landing__section--alt" id="work">
     <div class="landing__wrap">
-      <h2 class="landing__title">Selected Research</h2>
+      <h2 class="landing__title">Selected Projects</h2>
 
       <div class="cards">
         {% for item in site.data.selected_research %}
-          <a class="card" href="{{ item.url | uri_escape | prepend: base_path }}">
-            <span class="card__media">
-              <img src="{{ item.image | uri_escape | prepend: base_path }}" alt="" loading="lazy">
-            </span>
+          <article class="card">
             <span class="card__body">
               <span class="card__tag">{{ item.tag }}</span>
               <span class="card__title">{{ item.title }}</span>
               <span class="card__detail">{{ item.detail }}</span>
             </span>
-          </a>
+          </article>
         {% endfor %}
       </div>
 

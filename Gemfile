@@ -12,3 +12,5 @@ end
 gem "github-pages", group: :jekyll_plugins
 gem "faraday-retry"
 gem "csv"
+gem "bigdecimal"
+gem "tzinfo-data"

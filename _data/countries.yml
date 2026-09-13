@@ -1,0 +1,87 @@
+# Countries shown on the "Global Reach" map of the home page.
+# Add or remove entries here: the map updates automatically.
+# lat/lng: any representative point in the country (city or centroid).
+
+- name: "Bangladesh"
+  flag: "BD"
+  lat: 23.685
+  lng: 90.3563
+  years: "2019-2023"
+  detail: "Development, Human Rights"
+
+- name: "Cambodia"
+  flag: "KH"
+  lat: 12.5657
+  lng: 104.991
+  years: "2013-2014"
+  detail: "Labor, Private Sector Development"
+
+- name: "Colombia"
+  flag: "CO"
+  lat: 4.5709
+  lng: -74.2973
+  years: "2018-Present"
+  detail: "Labor"
+
+- name: "Kenya"
+  flag: "KE"
+  lat: 0.3166
+  lng: 37.9833
+  years: "2024-Present"
+  detail: "Transport, Labor, Environment, Private Sector Development"
+
+- name: "Liberia"
+  flag: "LR"
+  lat: 6.3005
+  lng: -10.7969
+  years: "2025-Present"
+  detail: "Digital, Labor, AI"
+
+- name: "North Macedonia"
+  flag: "MK"
+  lat: 41.6086
+  lng: 21.7453
+  years: "2025-Present"
+  detail: "Energy, Labor, Environment"
+
+- name: "Peru"
+  flag: "PE"
+  lat: -3.5489
+  lng: -72.8562
+  years: "2025-Present"
+  detail: "Circular Economy, Education, Environment"
+
+- name: "South Africa"
+  flag: "ZA"
+  lat: -30.5595
+  lng: 22.9162
+  years: "2023-Present"
+  detail: "Energy, Labor, Environment"
+
+- name: "South Korea"
+  flag: "KR"
+  lat: 35.9078
+  lng: 127.7669
+  years: "2014-Present"
+  detail: "Transport, Development Policy, Labor"
+
+- name: "Sri Lanka"
+  flag: "LK"
+  lat: 7.8731
+  lng: 80.7718
+  years: "2024"
+  detail: "Circular Economy, Education, Environment"
+
+- name: "The Gambia"
+  flag: "🇬🇲"
+  lat: 13.4549
+  lng: -16.5790
+  years: "2026-Present"
+  detail: "Digital, Labor, AI"
+
+- name: "United States"
+  flag: "US"
+  lat: 37.0902
+  lng: -95.7129
+  years: "2018-Present"
+  detail: "Transport, Labor, Health"

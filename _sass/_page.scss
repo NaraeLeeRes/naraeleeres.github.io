@@ -318,6 +318,18 @@
   color: var(--lp-muted);
 }
 
+.teaching-table-wrap {
+  overflow-x: auto;
+}
+
+.teaching-table {
+  min-width: 680px;
+}
+
+.teaching-table th[scope="row"] {
+  white-space: nowrap;
+}
+
 .flags,
 .landing__links {
   display: flex;

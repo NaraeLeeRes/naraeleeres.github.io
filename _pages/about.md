@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: landing
 permalink: /
 title: ""
 author_profile: false

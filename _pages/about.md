@@ -1,5 +1,5 @@
 ---
-layout: splash
+layout: landing
 permalink: /
 title: ""
 author_profile: false

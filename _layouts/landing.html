@@ -1,0 +1,159 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+<div id="main" class="landing" role="main">
+
+  <!-- ─────────────────────────  HERO  ───────────────────────── -->
+  <header class="landing__hero">
+    <div class="landing__wrap landing__hero-inner">
+      <img class="landing__portrait"
+           src="{{ '/images/thumbs/portrait.jpg' | prepend: base_path }}"
+           width="132" height="132"
+           alt="{{ site.author.name }}">
+
+      <p class="landing__eyebrow">{{ site.author.bio }}</p>
+      <h1 class="landing__name">{{ site.author.name }}</h1>
+
+      <p class="landing__meta">
+        <i class="fa-solid fa-building-columns" aria-hidden="true"></i> {{ site.author.employer }}
+        <span class="landing__dot">·</span>
+        <i class="fa-solid fa-location-dot" aria-hidden="true"></i> {{ site.author.location }}
+      </p>
+
+      <p class="landing__lede">{{ page.lede }}</p>
+
+      <p class="landing__cta">
+        <a class="landing__btn landing__btn--primary" href="{{ base_path }}/files/CV_09122026_NL.pdf" download>
+          <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Download CV
+        </a>
+        <a class="landing__btn" href="https://www.worldbank.org/en/about/unit/unit-dec/impactevaluation">
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i> World Bank DECDI
+        </a>
+        <a class="landing__btn" href="https://www.worldbank.org/en/about/people/n/narae-lee">
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i> Company Bio
+        </a>
+      </p>
+
+      <ul class="landing__stats">
+        <li><strong>{{ site.data.countries | size }}</strong><span>Countries</span></li>
+        <li><strong>{{ site.portfolio | size }}</strong><span>Projects</span></li>
+        <li><strong>{{ site.wp | size }}</strong><span>Working papers</span></li>
+        <li><strong>3</strong><span>Degrees</span></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ─────────────────────────  01 ABOUT  ───────────────────────── -->
+  <section class="landing__section" id="about">
+    <div class="landing__wrap">
+      <h2 class="landing__title">About</h2>
+      <div class="landing__prose">
+        {{ content }}
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────  02 SELECTED WORK  ───────────────────────── -->
+  <section class="landing__section landing__section--alt" id="work">
+    <div class="landing__wrap">
+      <h2 class="landing__title">Selected work</h2>
+
+      <div class="cards">
+        {% for item in site.data.selected_work %}
+          <a class="card" href="{{ item.url | uri_escape | prepend: base_path }}">
+            <span class="card__media">
+              <img src="{{ item.image | uri_escape | prepend: base_path }}" alt="" loading="lazy">
+            </span>
+            <span class="card__body">
+              <span class="card__tag">{{ item.tag }}</span>
+              <span class="card__title">{{ item.title }}</span>
+              <span class="card__detail">{{ item.detail }}</span>
+            </span>
+          </a>
+        {% endfor %}
+      </div>
+
+      <p class="landing__more"><a href="{{ base_path }}/portfolio/">All projects <span aria-hidden="true">→</span></a></p>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────  05 GLOBAL REACH  ───────────────────────── -->
+  <section class="landing__section" id="reach">
+    <div class="landing__wrap">
+      <h2 class="landing__title">Country Experience</h2>
+      <p class="landing__sub">Countries where I have conducted research. Click a marker for details.</p>
+
+      <div id="reach-map" class="reachmap"
+           data-points='{{ site.data.countries | jsonify }}'></div>
+
+      <ul class="flags">
+        {% for c in site.data.countries %}
+          <li><span class="flags__flag">{{ c.flag }}</span> {{ c.name }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────  06 CONTACT  ───────────────────────── -->
+  <section class="landing__section landing__section--alt" id="contact">
+    <div class="landing__wrap landing__contact">
+      <h2 class="landing__title">Contact</h2>
+      <p class="landing__sub">You can find me or get in touch through the following channels.</p>
+
+      <p class="landing__cta">
+        <a class="landing__btn landing__btn--primary" href="mailto:{{ site.author.email }}">
+          Say hello <span aria-hidden="true">→</span>
+        </a>
+      </p>
+
+      <ul class="landing__links">
+        <li><a href="mailto:{{ site.author.email }}"><i class="fa-solid fa-envelope" aria-hidden="true"></i> {{ site.author.email }}</a></li>
+        <li><a href="https://github.com/{{ site.author.github }}"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+      </ul>
+    </div>
+  </section>
+
+</div>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+  (function () {
+    var el = document.getElementById('reach-map');
+    if (!el || typeof L === 'undefined') { return; }
+
+    var points = JSON.parse(el.dataset.points);
+    var map = L.map(el, { scrollWheelZoom: false, zoomControl: true, worldCopyJump: true });
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+      maxZoom: 8,
+      minZoom: 1
+    }).addTo(map);
+
+    var bounds = [];
+    points.forEach(function (p) {
+      var marker = L.circleMarker([p.lat, p.lng], {
+        radius: 9,
+        color: '#ffffff',
+        weight: 2,
+        fillColor: '#2f7f93',
+        fillOpacity: 0.9
+      }).addTo(map);
+
+      marker.bindPopup(
+        '<strong>' + p.flag + ' ' + p.name + '</strong><br>' +
+        '<em>' + p.years + '</em><br>' + p.detail
+      );
+      bounds.push([p.lat, p.lng]);
+    });
+
+    map.fitBounds(bounds, { padding: [40, 40] });
+  })();
+</script>

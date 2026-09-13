@@ -1,5 +1,5 @@
 ---
-layout: landing
+layout: splash
 permalink: /
 title: ""
 author_profile: false
@@ -8,5 +8,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
+
+{{ page.lede }}
 
 

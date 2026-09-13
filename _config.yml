@@ -245,7 +245,7 @@ defaults:
       path: ""
       type: pages
     values:
-      layout: basic
+      layout: default
       author_profile: true
   # _teaching
   - scope:

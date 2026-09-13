@@ -20,5 +20,5 @@ main:
   - title: "Teaching & Training"
     url: /teaching/
         
-  - title: "Talks"
-    url: /talks/
+  #- title: "Talks"
+  #  url: /talks/

@@ -5,32 +5,15 @@ permalink: /publications/
 author_profile: true
 ---
 
- {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
- {% endif %}
-
-{% include base_path %}
-
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+# {% if site.author.googlescholar %}
+#  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+# {% endif %}
 
 
+Working Paper
+======
+Lee, Narae and Lee, Yoomin and Merfeld, Joshua and Park, David Sungho and Seo, Hee Kwon and Yoon, Chungeun. 2026. "Driving Electric Rides: Experimental Evidence on Vehicle Access Contracts, Labor Productivity, and Driver-Firm Incidence," Development Studies Series 26-02, KDI School of Public Policy and Management. http://dx.doi.org/10.2139/ssrn.6341019
 
+Journal Publication
+======
+Li, Meng-Hao, Yang Yu, Abu Bakkar Siddique, Narae Lee, Md Reazul Haque, Md Lutfay Tariq Rahman, Manzur Ahmad, Hadi El-Amine, and Naoru Koizumi. "Using the network scale-up method to characterise kidney trafficking in Kalai Upazila, Bangladesh." BMJ global health 8, no. 11 (2023): e012774.

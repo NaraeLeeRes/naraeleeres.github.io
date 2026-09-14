@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Narae Lee"
 title_separator          : "-"
 name                     : &name "Narae Lee"
-description              : &description "Narae Lee's Academic Website"
+description              : &description ""
 og_image                 : "profile.png"
 
 url                     : "https://naraeleeres.github.io"

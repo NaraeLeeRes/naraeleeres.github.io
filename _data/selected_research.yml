@@ -7,18 +7,20 @@
 
 - title: "Coal Phase-Out and Worker Transition: Multi-Country Impact Evaluation"
   tag: "Energy · Labor · Environment"
+  image: "/images/coaljet.jpg" 
   detail: "Research and impact evaluation of coal just transition for workers and firms"
 
 - title: "Kenya Air Pollution Data Production and Boda Driver Study"
-  tag: "Transport · Environment · Health · Data"
+  tag: "Transport · Environment · Labor · Health"
   image: "/images/pollution.jpg"
   detail: "Street-level Air Pollution Data Production and Impact Evaluation with Boda Boda Drivers in Nairobi, Kenya"
 
 - title: "Procurement Clauses and Infrastructure Quality Outcomes"
-  tag: "Infrastructure · Procurement · Maintenance and Operation"
+  tag: "Infrastructure · Procurement"
+  image: "/images/infraquality.jpg" 
   detail: "Research on Procurement Contract Clauses and Infrastructure Quality Consequences"
 
 - title: "Peru Circular Economy for Sustainable Tourism"
-  tag: "Circular Economy · Urban · Education"
+  tag: "Urban · Infrastructure · Education"
   image: "/images/aylluverde.jpg"
   detail: "Impact Evaluation for UNESCO-KOICA Inorganic Waste Management Project in Cusco, Peru"

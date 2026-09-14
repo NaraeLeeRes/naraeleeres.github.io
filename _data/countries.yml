@@ -3,7 +3,7 @@
 # lat/lng: any representative point in the country (city or centroid).
 
 - name: "Bangladesh"
-  flag: "BD"
+  flag: "&#127463;&#127465;"
   lat: 23.685
   lng: 90.3563
   years: "2019-2023"

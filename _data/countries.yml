@@ -10,63 +10,63 @@
   detail: "Development, Human Rights"
 
 - name: "Cambodia"
-  flag: "KH"
+  flag: "&#127472;&#127469;"
   lat: 12.5657
   lng: 104.991
   years: "2013-2014"
   detail: "Labor, Private Sector Development"
 
 - name: "Colombia"
-  flag: "CO"
+  flag: "&#127464;&#127476;"
   lat: 4.5709
   lng: -74.2973
   years: "2018-Present"
   detail: "Labor"
 
 - name: "Kenya"
-  flag: "KE"
+  flag: "&#127472;&#127466;"
   lat: 0.3166
   lng: 37.9833
   years: "2024-Present"
   detail: "Transport, Labor, Environment, Private Sector Development"
 
 - name: "Liberia"
-  flag: "LR"
+  flag: "&#127473;&#127479;"
   lat: 6.3005
   lng: -10.7969
   years: "2025-Present"
   detail: "Digital, Labor, AI"
 
 - name: "North Macedonia"
-  flag: "MK"
+  flag: "&#127474;&#127472;"
   lat: 41.6086
   lng: 21.7453
   years: "2025-Present"
   detail: "Energy, Labor, Environment"
 
 - name: "Peru"
-  flag: "PE"
+  flag: "&#127477;&#127466;"
   lat: -3.5489
   lng: -72.8562
   years: "2025-Present"
   detail: "Circular Economy, Education, Environment"
 
 - name: "South Africa"
-  flag: "ZA"
+  flag: "&#127487;&#127462;"
   lat: -30.5595
   lng: 22.9162
   years: "2023-Present"
   detail: "Energy, Labor, Environment"
 
 - name: "South Korea"
-  flag: "KR"
+  flag: "&#127472;&#127479;"
   lat: 35.9078
   lng: 127.7669
   years: "2014-Present"
   detail: "Transport, Development Policy, Labor"
 
 - name: "Sri Lanka"
-  flag: "LK"
+  flag: "&#127473;&#127472;"
   lat: 7.8731
   lng: 80.7718
   years: "2024"
@@ -80,7 +80,7 @@
   detail: "Digital, Labor, AI"
 
 - name: "United States"
-  flag: "US"
+  flag: "&#127482;&#127480;"
   lat: 37.0902
   lng: -95.7129
   years: "2018-Present"
